@@ -1,12 +1,13 @@
 const express = require('express');
+const bodyParser = require('body-parser');
 const fs = require('fs');
 const app = express();
 const port = 3000;
 
+// Servir arquivos estáticos (HTML, CSS, JS)
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
-// Servir arquivos estáticos (HTML, CSS, JS)
+app.use(bodyParser.json());
 app.use(express.static('public'));
 
 // Endpoint para carregar o arquivo JSON
