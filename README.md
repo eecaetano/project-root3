@@ -4,7 +4,7 @@ Esta é uma página HTML pública que permite a consulta do número do R.A (Regi
 
 ## Link de Acesso
 
-Acesse a página através do link: https://eecaetano.github.io/project-root
+Acesse a página através do link: https://eecaetano.github/project-root
 
 ## Funcionalidades
 
