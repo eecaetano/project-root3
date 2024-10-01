@@ -1,0 +1,24 @@
+            - nome: Configurar ambiente Node.js
+  usos: ações/setup-node@v4.0.4
+  com:
+    # Defina always-auth em npmrc.
+    always-auth: # opcional, o padrão é falso
+    # Versão Especificação da versão a ser usada. Exemplos: 12.x, 10.15.1, >=10.15.0.
+    node-version: # opcional
+    # Arquivo contendo a versão Spec da versão a ser usada. Exemplos: package.json, .nvmrc, .node-version, .tool-versions.
+    node-version-file: # opcional
+    # Arquitetura de destino para o Node usar. Exemplos: x86, x64. Usará a arquitetura do sistema por padrão.
+    arquitetura: # opcional
+    # Defina esta opção se quiser que a ação verifique a versão mais recente disponível que satisfaça a especificação da versão.
+    check-latest: # opcional
+    # Registro opcional para configurar para auth. Definirá o registro em um arquivo .npmrc e .yarnrc de nível de projeto e configurará auth para ler de env.NODE_AUTH_TOKEN.
+    registro-url: # opcional
+    # Escopo opcional para autenticação em registros com escopo. Retornará ao proprietário do repositório ao usar o registro GitHub Packages (https://npm.pkg.github.com/).
+    escopo: # opcional
+    # Usado para puxar distribuições de nó de node-versions. Como há um padrão, isso normalmente não é fornecido pelo usuário. Ao executar esta ação em github.com, o valor padrão é suficiente. Ao executar em GHES, você pode passar um token de acesso pessoal para github.com se estiver enfrentando limitação de taxa.
+    token: # opcional, o padrão é ${{ github.server_url == 'https://github.com' && github.token || '' }}
+    # Usado para especificar um gerenciador de pacotes para cache no diretório padrão. Valores suportados: npm, yarn, pnpm.
+    cache: # opcional
+    # Usado para especificar o caminho para um arquivo de dependência: package-lock.json, yarn.lock, etc. Suporta curingas ou uma lista de nomes de arquivo para armazenar em cache múltiplas dependências.
+    cache-dependency-path: # opcional
+          
